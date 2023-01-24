@@ -12,11 +12,38 @@ const button = document.querySelector("button").addEventListener("click", () =>{
     let authors = Object.keys(quotes);
     let author = authors[Math.floor(Math.random()* authors.length)];
     let quote = quotes[author];
-    console.log(quote);
+    // console.log(quote);
 
     const container = document.querySelector(".container");
     container.innerHTML =`
         <P class="qoute">${quote}</P>
         <em class="author">${author}</em>
         `
+});
+const color = () =>{
+    let random = Math.random();
+    let randomColor = Math.floor(Math.random() * 16777215);
+    let randomColorCode = "#" + randomColor.toString(16);
+    document.querySelector("body").style.backgroundColor = randomColorCode;
+}
+const colorbtn = document.querySelector("button").addEventListener("click", ()=>{
+    color();
+});
+const colorQuote = () =>{
+    let random = Math.random();
+    let randomColor = Math.floor(Math.random() * 16777215);
+    let randomColorCode = "#" + randomColor.toString(16);
+    document.querySelector(".qoute").style.color = randomColorCode;
+}
+const colorq = document.querySelector("button").addEventListener("click", ()=>{
+    colorQuote();
+});
+const colorbtnn = () =>{
+    let random = Math.random();
+    let randomColor = Math.floor(Math.random() * 16777215);
+    let randomColorCode = "#" + randomColor.toString(16);
+    document.querySelector(".author").style.color = randomColorCode;
+}
+const colorbt = document.querySelector("button").addEventListener("click", ()=>{
+    colorbtnn();
 });
