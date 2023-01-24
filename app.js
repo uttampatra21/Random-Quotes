@@ -6,6 +6,7 @@ const quotes = {
     "- mark" : "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey",
     "- Robbert" : "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron",
     "- Hasan" : "Life is what happens when you're busy making other plans. -John Lennon",
+    "- Gareeb" : "Tum gareeb ho",
 }
 const button = document.querySelector("button").addEventListener("click", () =>{
     let authors = Object.keys(quotes);
